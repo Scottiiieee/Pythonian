@@ -14,7 +14,7 @@ def UPARK():
                 print("\nInsufficient Credits.")
                 quit("\nUPARK")
                                
-        equipment = ["Soccerball = 1, Basketball = 2, Football = 3, Tennis Racquets = 4, Volleyball = 5, Kayak = 6, Tennis Balls = 7"]                    
+        equipment = ["Soccerball = 1, Basketball = 2, Football = 3, Tennis Racquets = 4, Volleyball = 5, Cornhole Boards = 6, Tennis Balls = 7"]                    
         print(*equipment, sep='\n')
          
 
@@ -31,7 +31,7 @@ def UPARK():
         elif input == 5:
                         print("\nYou have rented the Volleyball.")
         elif input == 6:
-                        print("\nYou have rented the Kayak.")
+                        print("\nYou have rented the Cornhole Boards.")
         elif input == 7:
                         print("\nYou have rented the Tennis Balls.")
 
@@ -47,35 +47,36 @@ def UPARK():
 
                 #define how long you want to rent the equipment out for
         renttime = float(input("Please enter the time for how long you want to rent the equipment out for. :"))
-        if renttime == 8 and equipment == 6: 
-                elif equipment != 6:
-                        print("\nYou have rented your equipment for the alotted time.")
-                        print("\nYou may not rent a kayak for 1 hour. Thank you for using this program.\n")
-        if renttime == 9 and equipment == 6: 
-                        print("\nYou may not rent a kayak for 2 hours. Thank you for using this program.\n")
-        if renttime == 10 and equipment == 6: 
-                        print("\nYou may not rent a kayak for 3 hours. Thank you for using this program.\n")
-        if renttime == 11 and equipment == 6: 
-                        print("\nYou may not rent a kayak for 4 hours. Thank you for using this program.\n")
-        if renttime == 12 and equipment == 6: 
-                        print("\nYou may not rent a kayak for 5 hours. Thank you for using this program.\n")
+        if renttime == 8: 
+                #elif equipment != 6:
+                        #print("\nYou have rented your equipment for the alotted time.")
+                        print("\nYou have rented your equipment for 1 hour. Thank you for using this program.\n")
+        if renttime == 9: 
+                        print("\nYou have rented your equipment for 2 hours. Thank you for using this program.\n")
+        if renttime == 10: 
+                        print("\nYou have rented your equipment for 3 hours. Thank you for using this program.\n")
+        if renttime == 11: 
+                        print("\nYou have rented your equipment for 4 hours. Thank you for using this program.\n")
+        if renttime == 12: 
+                        print("\nYou have rented your equipment for 5 hours. Thank you for using this program.\n")
 
-        if renttime > 7 and renttime <= 12:
-                        print("You may not rent the Kayak for these times. Please choose a time in days.")
-        elif equipment == 1 and renttime <= 12:
-                        print("You have rented the Soccerball at this time.\n")
+        #if renttime > 7 and renttime <= 12:
+        #                print("You may not rent the Kayak for these times. Please choose a time in days.")
+        #elif equipment == 1 and renttime <= 12:
+        #                print("You have rented the Soccerball at this time.\n")
         #elif renttime < 17:
          #               print("You may not go to rent at this time, please choose another time.\n")
 
 
         #define what time you want to rent your equipment
-        renttime = float(input("Please enter the time at which you would like to rent your equipment:"))
         if renttime > 12 and renttime <= 15:
+                renttime = float(input("Please re-enter the time at which you would like to rent your equipment:"))
+        #if renttime > 12 and renttime <= 15:
                 print("\nYou may rent. Thank you for using this program.\n") 
-                quit("\nUPARK")
-        elif renttime > 31:
-                print("You may not to rent at this time.\n")
-        elif renttime < 14:
-                print("You may not rent at this time.\n")
+                quit("\n Enjoy your time at UPARK")
+        #elif renttime > 31:
+         #       print("You may not to rent at this time.\n")
+        #elif renttime < 14:
+         #       print("You may not rent at this time.\n")
                 
 UPARK()
